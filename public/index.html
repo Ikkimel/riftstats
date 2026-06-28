@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RiftStats</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div class="brand">
+          <div class="mark">RS</div>
+          <div>
+            <h1>RiftStats</h1>
+            <p>Personal League match-stats viewer</p>
+          </div>
+        </div>
+      </header>
+
+      <section class="search">
+        <input id="riotId" placeholder="Riot ID, e.g. Faker#KR1" autocomplete="off" />
+        <select id="count">
+          <option value="20">Last 20</option>
+          <option value="30">Last 30</option>
+          <option value="50">Last 50</option>
+        </select>
+        <button id="go">Look up</button>
+      </section>
+
+      <p id="status" class="status"></p>
+      <div id="result"></div>
+
+      <footer class="foot">
+        Built on the Riot Games API. RiftStats isn't endorsed by Riot Games.
+      </footer>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>
